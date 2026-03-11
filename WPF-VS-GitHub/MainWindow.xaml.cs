@@ -24,5 +24,14 @@ namespace WPF_VS_GitHub
 		{
 			InitializeComponent();
 		}
+
+		private void greetButton_Click(object sender, RoutedEventArgs e)
+		{
+			string name = nameTextBox.Text;
+			if (string.IsNullOrWhiteSpace(name))
+				MessageBox.Show("Пожалуйста, введите имя!");
+			else
+				MessageBox.Show($"Привет, {name}!");
+		}
 	}
 }

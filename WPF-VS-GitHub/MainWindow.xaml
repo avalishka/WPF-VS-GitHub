@@ -10,7 +10,7 @@
         <StackPanel Margin="20">
             <Label Content="Введите ваше имя:" FontSize="14"/>
             <TextBox Name="nameTextBox" Width="250" Height="30" Margin="0,5,0,10"/>
-            <Button Name="greetButton" Content="Поздороваться" Width="150" Height="30"/>
+            <Button Name="greetButton" Content="Поздороваться" Width="150" Height="30" Click="greetButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>
